@@ -1,14 +1,15 @@
 {
-	"name": "Tab Screenshot Maker",
+	"name": "Screenshot Maker",
 	"version": "1.0.0",
-	"description": "The extension takes a screenshot of the pageapi.",
+	"description": "Расширение позволяет сделать скрншот страницы целиком",
 	"background": {
 		"persistent": false,
 		"scripts": ["background.js"]
 	},
+	"icons": {"128":"assets/img/camera.png"},
 	"browser_action": {
 		"default_icon": "assets/img/camera.png",
-		"default_title": "Take a screen shot!"
+		"default_title": "Screenshot tab"
 	},
 	"permissions": [
 		"<all_urls>",
