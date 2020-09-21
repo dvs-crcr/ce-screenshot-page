@@ -1,0 +1,23 @@
+{
+  "name": "ce-screenshot-page",
+  "version": "1.0.0",
+  "description": "The extension takes a screenshot of the page",
+  "private": true,
+  "scripts": {
+    "build": "npm run clean && tsc && npm run copy-public",
+    "clean": "rimraf dist",
+    "copy-public": "copyfiles -u 1 \"public/**/*\" dist"
+
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "chrome-extension",
+    "screenshot"
+  ],
+  "author": "dvs <dvs@crcr.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "0.0.123"
+  }
+}

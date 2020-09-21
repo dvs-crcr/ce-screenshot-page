@@ -1,0 +1,23 @@
+{
+	"name": "Tab Screenshot Maker",
+	"version": "1.0.0",
+	"description": "The extension takes a screenshot of the pageapi.",
+	"background": {
+		"persistent": false,
+		"scripts": ["background.js"]
+	},
+	"browser_action": {
+		"default_icon": "assets/img/camera.png",
+		"default_title": "Take a screen shot!"
+	},
+	"permissions": [
+		"<all_urls>",
+		"activeTab",
+        "tabs"
+	],
+	"web_accessible_resources": [
+		"contentScript.js",
+		"assets/*"
+	],
+	"manifest_version": 2
+}
